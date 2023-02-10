@@ -7,6 +7,7 @@
         $_SESSION["erreur"] = $erreur;
         $_SESSION["mot"] = $_POST["mot"];
         $_SESSION["victoire"] = 0;
+        $_SESSION["nbcoups"] = 0;
 
         $solution = "";
         for($i = 0; $i < strlen($_SESSION["mot"]); $i++) {
@@ -26,6 +27,7 @@
         if($etat) {
             $_SESSION["erreur"]+=1;
         }
+        $_SESSION["nbcoups"]+=1;
     }
 
     if($_SESSION["erreur"] == 10) {

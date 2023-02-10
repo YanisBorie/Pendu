@@ -1,0 +1,17 @@
+@import url("https://fonts.cdnfonts.com/css/dekko");
+
+body {
+    --main-color: #FAFAFA;
+    --button-color: #FFFFFF;
+
+    font-family: dekko;
+}
+
+button {
+    background-color: var(--button-color);
+}
+
+button a {
+    text-decoration-style: none;
+    font-family: dekko;
+}
